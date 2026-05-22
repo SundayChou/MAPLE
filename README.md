@@ -3,7 +3,7 @@
 ![Python 3.13](https://img.shields.io/badge/python-3.13-blue.svg)
 ![Version](https://img.shields.io/badge/version-0.0.1-success.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
-[![DOI](https://zenodo.org/badge/1246637054.svg)](https://doi.org/10.5281/zenodo.20343752)
+![DOI](https://zenodo.org/badge/1246637054.svg)](https://doi.org/10.5281/zenodo.20343752)
 
 ## 🍁 1. Method Description
 
