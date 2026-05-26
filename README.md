@@ -1,4 +1,4 @@
-# MAPLE: resolving spatiotemporal tissue microenvironments through spatial multi-modal integration via explicit dual-level graph modeling
+# MAPLE: resolving tissue microenvironments through spatial multi-modal integration via dual-level graph modeling
 
 ![Python 3.13](https://img.shields.io/badge/python-3.13-blue.svg)
 ![Version](https://img.shields.io/badge/version-0.0.1-success.svg)
@@ -7,8 +7,8 @@
 
 ## 🍁 1. Method Description
 
-MAPLE is a unified deep learning framework designed to resolve spatiotemporal tissue microenvironments by integrating spatial multi-omics and histology data.
-Driven by an explicit dual-level graph architecture, MAPLE overcomes rigid spatial topologies while enforcing biologically-informed feature constraints.
+MAPLE is a unified deep generative framework designed to resolve spatiotemporal tissue microenvironments by integrating spatial multi-omics and histology data.
+Driven by an efficient dual-level graph architecture, MAPLE overcomes rigid spatial topologies while enforcing biologically-informed feature constraints.
 By generating highly discriminative and biologically interpretable joint representations, it provides a scalable computational infrastructure for comprehensive spatial multi-modal analyses.
 
 ![png](overview.png)
