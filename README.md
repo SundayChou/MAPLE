@@ -7,7 +7,7 @@
 
 ## 🍁 1. Method Description
 
-MAPLE is a unified deep generative framework designed to resolve spatiotemporal tissue microenvironments by integrating spatial multi-omics and histology data.
+MAPLE is a unified deep generative framework designed to resolve spatial tissue microenvironments by integrating spatial multi-omics and histology data.
 Driven by an efficient dual-level graph architecture, MAPLE overcomes rigid spatial topologies while enforcing biologically-informed feature constraints.
 By generating highly discriminative and biologically interpretable joint representations, it provides a scalable computational infrastructure for comprehensive spatial multi-modal analyses.
 
