@@ -3,10 +3,8 @@ import torch
 import random
 import subprocess
 import numpy as np
-import pandas as pd
 import scanpy as sc
 import anndata as ad
-import scipy.sparse as sp
 
 
 def fix_seed(seed=42):
@@ -25,29 +23,6 @@ def fix_seed(seed=42):
             torch.backends.cudnn.benchmark = False
     except ImportError:
         pass
-
-
-def get_optimal_device():
-    if not torch.cuda.is_available():
-        print('No available GPU detected, falling back to CPU.')
-        return torch.device('cpu')
-
-    try:
-        smi_output = subprocess.check_output(
-            ['nvidia-smi', '--query-gpu=memory.free', '--format=csv,nounits,noheader'],
-            encoding='utf-8'
-        )
-        free_memories = [int(x.strip()) for x in smi_output.strip().split('\n')]
-    except Exception as e:
-        print(f'nvidia-smi check failed: {e}. Falling back to default cuda:0.')
-        return torch.device('cuda:0')
-
-    best_gpu = free_memories.index(max(free_memories))
-    free_mem_gb = max(free_memories) / 1024.0
-
-    print(f'Automatically assigned to the device with the most free memory ({free_mem_gb:.2f} GB): cuda:{best_gpu}.')
-
-    return torch.device(f'cuda:{best_gpu}')
 
 
 def scipy_to_torch_sparse(scipy_mat):
