@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='maple',
-    version='0.0.1',
+    version='0.0.2',
     description='MAPLE: resolving spatiotemporal tissue microenvironments through spatial multi-modal integration via explicit dual-level graph modeling',
     author='Zhipeng Zhou, Shenshen Bu, Yang Zhang, Zhiming Dai',
     author_email='zhouzhp@mail2.sysu.edu.cn',
